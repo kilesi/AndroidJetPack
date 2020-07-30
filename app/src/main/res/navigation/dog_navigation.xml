@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/actionListFragment"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/action_detailsFragment_to_listFragment">
 
     <fragment
-        android:id="@+id/listFragment"
+        android:id="@+id/action_detailsFragment_to_listFragment"
         android:name="com.example.dogsbreeds.view.ListFragment"
         android:label="ListFragment" >
         <action
@@ -17,6 +17,6 @@
         android:label="DetailsFragment" >
         <action
             android:id="@+id/action_detailsFragment_to_listFragment"
-            app:destination="@id/listFragment" />
+            app:destination="@id/action_detailsFragment_to_listFragment" />
     </fragment>
 </navigation>
